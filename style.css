@@ -9,3 +9,97 @@
   --grayish-blue:hsl(229, 6%, 66%);
   --light-gray:hsl(0, 0%, 98%);
 }
+
+body {
+  background-color: var(--light-gray);
+}
+
+header {
+ text-align: center;
+ width: 60%;
+ margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.cards > div {
+
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+}
+
+.vertical-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vertical-cards > div {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  width: 400px;
+
+}
+
+hr {
+  margin-top: 2px;
+  
+  border-top: 4px solid
+  
+}
+
+.supervisor > hr {
+  border-color: var(--cyan);
+}
+.teambuilder > hr {
+  border-color: var(--red);
+}
+
+.karma > hr {
+  border-color: var(--orange);
+}
+
+.calculator > hr {
+  border-color: var(--blue);
+}
+
+.card-content {
+  padding: 15px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: var(--dark-blue);
+  font-size: large;
+  font-weight: bold;
+}
+
+img {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+
+@media (min-width:768px) {
+
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+}
