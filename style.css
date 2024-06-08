@@ -12,22 +12,44 @@
 
 body {
   background-color: var(--light-gray);
+  font-family: "Poppins", sans-serif;
+
 }
 
 header {
  text-align: center;
- width: 60%;
- margin: 0 auto;
+ width: 38%;
+ margin: 40px auto;
+
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+header .title {
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+header .subtitle {
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+header .description {
+  color: var(--grayish-blue);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+
 }
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 70%;
+  margin: 0 auto;
   gap: 15px;
 }
 
@@ -37,7 +59,10 @@ body {
   background-color: white;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 400px;
+  min-width: 340px;
+  max-width: 340px;
+  height: 240px;
+
 }
 
 .vertical-cards {
@@ -50,7 +75,8 @@ body {
   background-color: white;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-  width: 400px;
+  width: 340px;
+  height: 240px;
 
 }
 
@@ -84,13 +110,20 @@ hr {
 
 .card-title {
   color: var(--dark-blue);
-  font-size: large;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.card-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grayish-blue);
 }
 
 img {
-  margin-top: 20px;
-  margin-left: auto;
+  margin-top: 15px;
+  align-self: end;
 }
 
 
